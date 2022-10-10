@@ -1,0 +1,230 @@
+
+
+body{
+    padding: 0%;
+    margin: 0%;
+    background-color: #f3f3d6 !important;
+    font-family: sans-serif;
+    /* color: aliceblue;*/
+    
+}
+
+
+.navegation {
+    width: 100%;
+    background-color: #cecec6;
+    overflow: auto;
+    text-align: center;
+    
+    
+    
+       
+  }
+  
+  .navegation a {
+    float: left;
+    vertical-align:  center;
+    padding: 12px;
+    margin-top: 0%;
+    margin-right: 10px;
+    margin-left: 10px;
+    color: rgb(0, 0, 0);
+    
+    font-size: 14px;
+    
+    
+  }
+
+.button{
+  margin: 5px;
+}
+  
+  img {
+    height: 100%;
+    width: 100%;
+    
+   }
+
+
+  .arglogo{
+    float: left;
+    margin-top: 5px;
+    margin-left: 5px;
+    height: 50px;
+    width: 150px;
+    vertical-align: center;
+  }
+
+  .iconBar{
+    
+    height: 60px;
+    width: 60px;
+    vertical-align: center;
+    
+  }
+
+  .botonesNav{
+    
+    float:right;
+    padding: 5px;
+    
+    
+  }
+
+ 
+.Perfil {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: #f3f3d6;
+  color: black;
+  margin-top: 200px;
+  margin-left: 30px;
+ 
+  
+ 
+  }
+
+#minombre{
+
+font:"Roboto";
+font-size: 35px;
+font-weight: bolder; 
+color: rgb(71, 121, 212);
+
+}
+
+#miapellido{
+  font:"Roboto";
+  font-size: 35px;
+  font-weight: bold;
+  color: black;
+  
+  
+  }
+
+  #profesion{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight:lighter; 
+    font-style: italic;
+    color: black;
+    
+    
+    }
+
+    #intro{
+      font-family:verdana;
+      font-size: 16px;
+      font-weight:lighter; 
+      
+      color: black;
+      
+      
+      }
+
+
+ .fotoPerfil{
+    width:300px;
+    height:300px;
+    /*box-shadow: -10px 5px 3px 3px lightgray;*/
+    border-radius:150px;
+    overflow: hidden;
+    margin-left: 80px;
+    
+   
+
+}
+.infoPerfil{
+  margin-top: 30px;
+  text-align: left;
+  padding-left: 20px;
+ 
+  
+}
+
+  .contenido{
+    margin-top: 150px;
+  }
+
+/*.contenedorInfo {
+   margin-left: 10px;
+   margin-right: 10px;
+   padding: 15px;
+   margin-top: 15px;
+   border-radius: 10px;   
+  border: 1px solid #000000;
+  background-color: transparent;
+   
+  } */ 
+
+  .contenedorInfo {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 10px;   
+   border: 1px solid #000000;
+   background-color: transparent;
+    
+   }
+#contenedorInfoRigth {
+        text-align: right;
+        
+        
+          }
+
+
+
+
+#tituloSeccion{
+size: 14px;
+font-weight: bold;
+
+  }
+
+#fechas{
+    size: 14px;
+    font-style: italic;
+    
+      }
+
+ #cuerpTexto{
+   size: 14px;
+        
+          }
+
+#linkCard a:hover{
+ color: lightblue;
+}
+
+
+.boton-subir {
+  position: fixed;
+  right: 5%;
+  bottom: 10px;
+  background-color: gray;
+  padding: 20px;
+  display: none;
+  opacity: 0.7
+}
+
+.boton-subir a {
+  font-size: 24px;
+  color: #fff;
+}
+
+
+.footer{
+background-color: #afafae;
+color: rgb(0, 0, 0);
+height: 40px;
+text-align: center;
+padding-top: 5px;
+padding-bottom: 5px;
+margin-top: 15px;
+
+
+}
+
+  
