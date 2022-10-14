@@ -274,16 +274,12 @@ font:"Roboto";
 
   }
 
-#fechas{
-    size: 14px;
-    font-style: italic;
-    
-      }
 
- #cuerpTexto{
-   size: 14px;
-        
-          }
+  .contact-image{
+ height: 240px;
+ width: 230px;
+ padding: 25px;
+  }
 
 #linkCard a:hover{
  color: lightblue;
