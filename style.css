@@ -1,5 +1,11 @@
 
 
+:root{
+
+  --primary-color: #4472c9;
+
+}
+
 body{
     padding: 0%;
     margin: 0%;
@@ -14,7 +20,7 @@ body{
 
 .navegation {
     width: 100%;
-    background-color: #535da1;
+    background-color: black;
     overflow: auto;
     text-align: center;
     
@@ -39,6 +45,15 @@ body{
     
     
   }
+  .navegation a:hover{
+ background-color: aliceblue;
+ color: black;
+ 
+ text-transform: uppercase;
+
+  }
+
+
 
 .button{
   margin: 5px;
@@ -73,88 +88,124 @@ body{
 
  
 .Perfil {
-  background: linear-gradient(-70deg, #4472c9 65%, rgba(0, 0, 0, 0) 30%);
+  background: linear-gradient(-70deg, #4472c9 60%, rgba(0, 0, 0, 0) 70%), url('images/yosito2.jpg');
+  
+ 
+
+  background-color: var(--primary-color);
   position: relative;
   overflow: hidden;
-  padding-top: 100px;
+  padding-top: 70px;
   padding-bottom: 50px;
   margin-bottom: 20px;
   height: 100vh;
  
   }
 
+ .buttonDown{
+  color:#fff;
+  margin-left: 20px;
  
+  
+ }
+
+ .buttonDown:hover{
+  
+  color: rgb(241, 93, 93);;
+
+ }
 
 #bienvenida{
   font:"Roboto";
-  font-size: 35px;
+  font-size: 50px;
   font-weight: bold;
-  color: black;
-  
-  
+  color: rgb(255, 255, 255);
+  margin: 20px;
+ 
+   
   }
 
- 
-
-    #intro{
-      font-family:verdana;
-      font-size: 16px;
-      font-weight:lighter; 
+#intro{
       
-      color: black;
+      font-size: 20px;
       
-      
+      margin-left: 10px;
+  
       }
 
 
- .fotoPerfil{
-  display: inline-block;
-  position: relative;
-  width: 300px;
-  height: 300px;
-  overflow: hidden;
-  border-radius: 50%;
-
-  border:10px solid #fff;
-  
-background-position:center center;
-  transform: rotate(10deg);
-  
-  box-shadow: 30px 30px 0px 0px #80bce1; 
-  outline:1px solid #e8e8e8;
-   
-
+.imagencita {
+    position:absolute;
+    top:40px;
+    left:130px;
+    width:300px;
+    height:300px;
+    overflow: hidden;
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    box-shadow: 40px 20px 0px 0px #0b2b3f;  /*  --- change hex to change the coloured block on the right of the image --- */
+    
+    border-radius: 50%;
 }
 
-.fotoSecundaria{
-  display: inline-block;
-  width: 300px;
-  height: 300px;
-  overflow: hidden;
-  border-radius: 50%;
 
+.imagencita::before {
+  content: "";
+  background: url("images/rayitas.png");
+  left: 50px;
+  bottom: 10px;
+ 
+}
+
+.iniciales {
   position:absolute;
-  border:10px solid #fff;
-  
-background-position:center center;
-  transform: rotate(10deg);
-  
-  box-shadow: 30px 30px 0px 0px #80bce1; 
-  outline:1px solid #e8e8e8;
-   
+  top:230px;
+  left:120px;
+  font-size:120px;
+  font-weight:500;
+  font-size: 90px;
+  transform:rotate(15deg);
+  z-index: 1;
+  font: "sans-serif";
+ 
+  text-shadow: 2px 2px #ffffff;
 
+}
+
+#nombre{
+  color: transparent;
+-webkit-text-stroke-color:2px #000000;  
+}
+
+#tagline{
+  color: rgb(255, 255, 255); 
+  
+}
+#inicial-ape{
+  color: rgb(0, 0, 0);
+  border-color: white;
 }
 
 
 
+
+.fotosHeader {
+      align-items: flex-start;
+ 
+       
+      }
 
 
 .infoPerfil{
-  margin-top: 30px;
-  margin-left: 50px;
-  align-content: flex-end;
-  padding-left: 20px;
+  
+  margin: 80px;
+  align-content: left;
+  
+  padding-left: 10px;
   position: relative;
+  
+  
  
   
 }
@@ -170,14 +221,11 @@ background-position:center center;
 
 .divisor{
 
-  padding-top: 5px;
-  
-  margin-bottom: 5px;
   text-align: center;
   font-weight: bolder;
   font-size: 35px;
-padding-bottom: 20px;
-  background-color: #fff;
+padding: 40px;
+
  
   
 
@@ -185,7 +233,7 @@ padding-bottom: 20px;
 
 #subtitulo{
   text-align: center;
-  font-size: 15px;
+  font-size: 20px;
   font-weight: lighter;
   font-style: italic;
 
@@ -225,7 +273,7 @@ color: black;
 .about-section{
 
   border: black;
-  background-color: #4472c9;
+  background-color: var(--primary-color);
 }
 
 
@@ -234,7 +282,7 @@ color: black;
   height: auto;
   position:relative;
   margin-bottom: 50px;
-  background-color: #4472c9;
+  background-color: #cee4f1; 
     
    }
 
@@ -248,7 +296,7 @@ float: right;
 margin-top:5px;
 padding-top: 10px;
 
-background-color: #80bce1;
+background-color: var(--primary-color);
 
 vertical-align:-webkit-baseline-middle;
 
@@ -273,6 +321,54 @@ font:"Roboto";
  
 
   }
+
+  .projects-thumb {
+    background: var(--section-bg-color);
+    border: 2px solid var(--white-color);
+    border-radius: var(--border-radius-medium);
+    position: relative;
+    overflow: hidden;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    padding: 40px;
+    transition: all ease 0.5s;
+  }
+  
+  .projects-thumb:hover {
+    border-color: var(--secondary-color);
+  }
+  
+  .projects-thumb:hover .projects-image,
+  .projects-thumb:focus .projects-image {
+    transform: rotate(0) translateY(0);
+  }
+  
+  .projects-thumb .popup-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .projects-image {
+    border-radius: var(--border-radius-medium);
+    display: block;
+    width: 100%;
+    transform: rotate(10deg) translateY(80px);
+    transition: all ease 0.5s;
+  }
+  
+  .projects-title {
+    margin-bottom: 20px;
+  }
+  
+  .projects-tag {
+    font-size: var(--menu-font-size);
+    font-weight: var(--font-weight-medium);
+    color: var(--secondary-color);
+    text-transform: uppercase;
+    margin-bottom: 5px;
+  }
+
 
 
   .contact-image{
@@ -306,8 +402,8 @@ font:"Roboto";
 
 
 .footer{
-background-color: #afafae;
-color: rgb(0, 0, 0);
+  background-color: black;
+color:#fff;
 height: 40px;
 text-align: center;
 padding-top: 5px;
