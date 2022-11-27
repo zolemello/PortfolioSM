@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+
 
 
 :root{
@@ -128,7 +131,7 @@ body{
 
 #intro{
       
-      font-size: 20px;
+      font-size: 35px;
       
       margin-left: 10px;
   
@@ -138,15 +141,30 @@ body{
 
 
 #nombre{
-  font-size:x-large;
-  font-weight: bold;
-color:#000000;
+ 
+  font-size: 50px;
+ 
+color:#ffffff;
+font-family: 'Lato', sans-serif;
+font-weight: bolder;
+
+
 }
 
 #tagline{
   color: rgb(255, 255, 255); 
   
 }
+
+#undertag{
+  color:#ffffff;
+  font-size: 20px;
+  font-style: italic;
+  text-align: right;
+}
+
+
+
 #inicial-ape{
   color: rgb(0, 0, 0);
   border-color: white;
