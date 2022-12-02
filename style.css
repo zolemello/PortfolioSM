@@ -7,6 +7,9 @@
 
   --primary-color: #4472c9;
   
+  
+ 
+ 
 
 }
 
@@ -15,7 +18,7 @@ body{
     margin: 0%;
     background-color: #f6feff !important;
     font-family: sans-serif;
-    /* color: aliceblue;*/
+   
     overflow-x:hidden;
 
     
@@ -92,8 +95,8 @@ body{
 
  
 .Perfil {
-  background: linear-gradient(-70deg, #4472c9 60%, rgba(0, 0, 0, 0) 70%), url('images/yosito2.jpg');
-  
+  /*background: linear-gradient(-70deg, #4472c9 60%, rgba(0, 0, 0, 0) 70%), url('images/fotopres2.jpg');*/
+  background: url("images/yosito2.jpg") no-repeat left top, linear-gradient( var(--primary-color), #7281da);
  
 
   background-color: var(--primary-color);
@@ -115,13 +118,13 @@ body{
 
  .buttonDown:hover{
   
-  color: rgb(241, 93, 93);;
+  color: rgb(68, 0, 255);;
 
  }
 
 #bienvenida{
   font:"Roboto";
-  font-size: 50px;
+  font-size: 70px;
   font-weight: bold;
   color: rgb(255, 255, 255);
   margin: 20px;
@@ -131,7 +134,7 @@ body{
 
 #intro{
       
-      font-size: 35px;
+  line-height:0;
       
       margin-left: 10px;
   
@@ -142,8 +145,10 @@ body{
 
 #nombre{
  
-  font-size: 50px;
- 
+font-size: 50px;
+margin: 50%;
+
+
 color:#ffffff;
 font-family: 'Lato', sans-serif;
 font-weight: bolder;
@@ -153,6 +158,8 @@ font-weight: bolder;
 
 #tagline{
   color: rgb(255, 255, 255); 
+  font-size: 30px;
+  
   
 }
 
@@ -324,7 +331,10 @@ font:"Roboto";
   .projects-thumb:hover .projects-image,
   .projects-thumb:focus .projects-image {
     transform: rotate(0) translateY(0);
+   
   }
+
+ 
   
   .projects-thumb .popup-image {
     display: block;
@@ -387,6 +397,11 @@ font:"Roboto";
 }
 
 
+.titulo-contacto{
+font-size: 20px;
+font-family: "Roboto";
+}
+
 .footer{
   background-color: black;
 color:#fff;
@@ -399,4 +414,4 @@ margin-top: 15px;
 
 }
 
-  
+

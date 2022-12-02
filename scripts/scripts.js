@@ -25,3 +25,7 @@ document.addEventListener("DOMContentLoaded", function(){
      $(".boton-subir").fadeOut('slow');
     }
    });
+
+
+  
+   
