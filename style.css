@@ -95,8 +95,8 @@ body{
 
  
 .Perfil {
-  /*background: linear-gradient(-70deg, #4472c9 60%, rgba(0, 0, 0, 0) 70%), url('images/fotopres2.jpg');*/
-  background: url("images/yosito2.jpg") no-repeat left top, linear-gradient( var(--primary-color), #7281da);
+  background: linear-gradient(-70deg, #4472c9 60%, rgba(0, 0, 0, 0) 30%), url('images/fotoHeader.jpg');
+  /*background: url("images/yosito.jpg") no-repeat left top, linear-gradient( var(--primary-color), #7281da);*/
  
 
   background-color: var(--primary-color);
