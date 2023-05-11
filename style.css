@@ -450,3 +450,23 @@ margin-top: 15px;
     max-width: 100%;
   }
 }
+
+
+/* Hover Animation */
+.basic-4 .image-container {
+	overflow: hidden;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.basic-4 .image-container img {
+	margin: 0;
+	transition: all 0.2s;
+}
+
+.basic-4 .image-container:hover img {
+	-moz-transform: scale(1.15);
+	-webkit-transform: scale(1.15);
+	transform: scale(1.15);
+} 
+/* end of hover animation */
