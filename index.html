@@ -48,16 +48,18 @@
   
 
     <div class="botonesNav">
-        
+     
          <a class="custom-btn btn custom-link botonMenu"  href="index.html">Home</a> 
           
-        <a class="custom-btn btn custom-link botonMenu" href="#about">About</a>
+        <a class="custom-btn btn custom-link botonMenu" href="index.html#about">About</a>
                  
         <a class="custom-btn btn custom-link botonMenu" href="#proyectos">Proyectos</a>
 
-        <a class="custom-btn btn custom-link botonMenu" href="#resumen">Mas</a>
+        <a class="custom-btn btn custom-link botonMenu" href="#estudios">Estudios</a>
 
-        <a class="custom-btn btn custom-link botonMenu" href="#contacto">Contacto</a>
+        <a class="custom-btn btn custom-link botonMenu" href="#habilidades">Más</a>
+
+        <a class="custom-btn btn custom-link botonMenu" href="#contacto">Concato</a>
     
        
 
@@ -160,29 +162,26 @@
 
                     <p >PROYECTOS</p>
                     <p id="subtitulo"> Algunos trabajos hechos en cursos</p>
-                    
-                
+                 </div>
+                 
+                <div class="filtros">
+                    <button onclick="filterProjects('todos')">Todos</button>
+                    <button onclick="filterProjects('back')">Full Stack</button>
+                    <button onclick="filterProjects('front')">Front End</button>
+                    <button onclick="filterProjects('disenio')">Diseño UX/UI</button>
+                    <br>
                 </div>
-
-             
-
-
-                
-
-                
             </div>
         </section>
 
-        <div class="container">
-            
-        </div>
+         
 
          <!-- trabajos -->
     <div class="display-trabajos">
         <div class="container">
             <div class="row">
-                <div class="col-lg-4">
-                    <div class="text-container">
+                <div class="col-lg-6" data-category="back">
+                    <div class="text-container" >
                         <div class="image-container">
                            <a href="https://drive.google.com/file/d/1EmoFbjJSTqfd9LDMGNtbBlv4sDQbREBX/view?usp=sharing"  target="_blank" class="popup-image" >  <img class="img-fluid" src="images/work-4.jpg" class="projects-image img-fluid tohidaButton" alt=""> </a> 
                               
@@ -195,7 +194,7 @@
                 </div> <!-- end of col -->
 
 
-                <div class="col-lg-4">
+                <div class="col-lg-6" data-category="disenio">
                     <div class="text-container">
                         <div class="image-container">
                            <a href="https://drive.google.com/file/d/1EmoFbjJSTqfd9LDMGNtbBlv4sDQbREBX/view?usp=sharing"  target="_blank" class="popup-image" >  <img class="img-fluid" src="images/work-1.jpg" class="projects-image img-fluid tohidaButton" alt=""> </a> 
@@ -208,18 +207,7 @@
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
 
-                <div class="col-lg-4">
-                    <div class="text-container">
-                        <div class="image-container">
-                            <a href="https://mynysl-webapp.firebaseapp.com/" target="_blank" class="popup-image"  >
-                                <img class="img-fluid" src="images/work-2.jpg" alt="alternative">
-                            </a>
-                        </div> <!-- end of image-container -->
-                        <p><h3 class="projects-title">NYSL Web</h3></p>
-                        <p><strong>Heho para: </strong> Minhub Course</p> 
-                        <p><strong>Proyecto:</strong> Desarrollo de una web para un equipo de fútbol infantil <a class="blue" href="https://mynysl-webapp.firebaseapp.com/"  target="_blank"> NYSL Website </a> </p>
-                    </div> <!-- end of text-container -->
-                </div> <!-- end of col -->
+                
 
             </div> <!-- end of row -->
 
@@ -228,7 +216,7 @@
                 
 
 
-                <div class="col-lg-4">
+                <div class="col-lg-6" data-category="front">
                     <div class="text-container">
                         <div class="image-container">
                             <a href="https://zolemello.github.io/mindhubweb_course2/" target="_blank" class="popup-image" >
@@ -241,10 +229,24 @@
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
 
+                <div class="col-lg-6" data-category="front">
+                    <div class="text-container">
+                        <div class="image-container">
+                            <a href="https://mynysl-webapp.firebaseapp.com/" target="_blank" class="popup-image"  >
+                                <img class="img-fluid" src="images/work-2.jpg" alt="alternative">
+                            </a>
+                        </div> <!-- end of image-container -->
+                        <p><h3 class="projects-title">NYSL Web</h3></p>
+                        <p><strong>Heho para: </strong> Minhub Course</p> 
+                        <p><strong>Proyecto:</strong> Desarrollo de una web para un equipo de fútbol infantil <a class="blue" href="https://mynysl-webapp.firebaseapp.com/"  target="_blank"> NYSL Website </a> </p>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+    
+
             </div> <!-- end of row -->
 
-            
-            
+           
+           
         </div> <!-- end of container -->
 
     </div> <!-- end of display-trabajos -->
@@ -260,62 +262,116 @@
 <!--  EDUCACION Y SKILLS-->
 
 
-<section id="resumen" class="contenedorEdu">
+<section id="estudios" class="contenedorEdu">
+    <div class="projects section-padding" >
+        <div class="container">
+            <div class="divisor" >
+                <p >ESTUDIOS</p>
+                <p id="subtitulo"> Estudios formales y cursos realizados</p>
+                
+            
+            </div>
+
+        </div>
+    </div>
+    
     <div class="container ">
+        
         <div class="row">
+          
+           
             <div class="col-md-6 col-sm-6">					
-                <p><h2 > <strong> Estudios</strong></h2>  <span id="subtitulo">Cursos y estudios realizados</span></p>
-                <p><span class="estudioTitulo">Tecnicatura en Desarrollo de Software </span> <span class="estudioInfo">- IFTS ° 11 - En curso (1° Año)  </span></p>
+                <p id="tituloMedio">Estudios Formales  </p>
+                <p><span class="estudioTitulo">Tecnicatura en Desarrollo de Software </span> <span class="estudioInfo">- IFTS ° 11 - En curso (2° Cuatrimestre)  </span></p>
                 <p><span class="estudioTitulo">Ingeniería en Sistemas UTN FRBA </span> <span class="estudioInfo">- 16 materias aprobadas </span></p>
-                 <p><span class="estudioTitulo">Ciberseguridad </span> <span class="estudioInfo">  Fundación Telefónica - 2023</span></p>
-                 <p><span class="estudioTitulo">Marketing Digital</span> <span class="estudioInfo">Aleph -  2022</span></p>
-                 <p><span class="estudioTitulo">Diseño UX UI</span> <span class="estudioInfo">Codo a Codo - 2022</span></p>
-                 <p><span class="estudioTitulo">Armado y reparación de PC </span> <span class="estudioInfo">ISTIC - 2021</span></p>
-                 <p><span class="estudioTitulo">Testing </span> <span class="estudioInfo"> Codo a Codo - 2021</span></p>
-                 <p><span class="estudioTitulo">Desarrollo web Front End</span> <span class="estudioInfo"> Codo a Codo - 2021</span></p>
-                 <p><span class="estudioTitulo">Bootcamp Mindhub</span> <span class="estudioInfo">2019</span></p>
+                
             </div>
             <div class="col-md-6 col-sm-6">
-                <p><h2 ><strong>Skills</strong> </h2>  <span id="subtitulo">Algunos conocimientos, herramientas y habilildades</span></p>
-                
-                <!-- un bloque-->
-                <h4 class="etiqueta">INGLÉS <small class="progresoporcentaje"></small></h5>
-                <div class="progress tm-progress">
-                    <div class="progress-bar bg-info progress-bar-success" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div>
+                				
+                    <p id="tituloMedio"> Cursos </p>
+                    <p><span class="estudioTitulo">Full Stack Python</span> <span class="estudioInfo"> Codo a Codo - 2023</span></p>
+                     <p><span class="estudioTitulo">Ciberseguridad </span> <span class="estudioInfo">  Fundación Telefónica - 2023</span></p>
+                     <p><span class="estudioTitulo">Marketing Digital</span> <span class="estudioInfo">Aleph -  2022</span></p>
+                     <p><span class="estudioTitulo">Diseño UX UI</span> <span class="estudioInfo">Codo a Codo - 2022</span></p>
+                     <p><span class="estudioTitulo">Armado y reparación de PC </span> <span class="estudioInfo">ISTIC - 2021</span></p>
+                     <p><span class="estudioTitulo">Testing </span> <span class="estudioInfo"> Codo a Codo - 2021</span></p>
+                     <p><span class="estudioTitulo">Desarrollo web Front End</span> <span class="estudioInfo"> Codo a Codo - 2021</span></p>
+                     <p><span class="estudioTitulo">Bootcamp Mindhub</span> <span class="estudioInfo">2019</span></p>
                 </div>
-                <!-- fin de bloque-->
-                <h4 class="etiqueta">HTML, CSS, BOOTSTRAP <small class="progresoporcentaje"></small></h4>
-                <div class="progress tm-progress">
-                    <div class="progress-bar bg-info"  role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 85%;"></div>
-                </div>
-                <h4 class="etiqueta">JAVASCRIPT <small class="progresoporcentaje"></small></h4>
-                <div class="progress tm-progress">
-                    <div class="progress-bar progress-bar bg-info  " role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 50%;"></div>
-                </div> <!-- fin de bloque -->
-
-                 <!-- un bloque-->
-                 <h4 class="etiqueta">JAVA <small class="progresoporcentaje"></small></h4>
-                 <div class="progress tm-progress">
-                     <div class="progress-bar progress-bar bg-info " role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 30%;"></div>
-                 </div>
-                 <!-- fin de bloque-->
-
-                  <!-- un bloque-->
-                <h4 class="etiqueta">PHOTOSHOP, EDITING <small class="progresoporcentaje"></small></h4>
-                <div class="progress tm-progress">
-                    <div class="progress-bar progress-bar bg-info  " role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div>
-                </div>
-                <!-- fin de bloque-->
-
-                 <!-- un bloque-->
-                 <h4 class="etiqueta">CONTENT CREATION <small class="progresoporcentaje"></small></h4>
-                 <div class="progress tm-progress">
-                     <div class="progress-bar progress-bar bg-info" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 70%;"></div>
-                 </div>
-                 <!-- fin de bloque-->
 
                 
-                  </div>
+                 
+                  
+            </div>
+        </div>
+
+</div>
+
+</section>
+
+
+<section id="habilidades" class="contenedorSkills">
+    <div class="projects section-padding" >
+        <div class="container">
+            <div class="divisor" >
+                <p >HABILIDADES</p>
+                <p id="subtitulo"> Algunos conocimientos, herramientas y habilildades</p>
+                
+            
+            </div>
+
+        </div>
+    </div>
+    <div class="container ">
+        <div class="row">
+           
+                   <div class="row col-12">
+                    
+                    <div class="word-cloud">
+                        <div class="word">Inglés</div>  
+                      </div>
+                  
+                </div>
+
+              
+        </div><!-- end row-->
+
+        <div class="row">
+           <div class="row col-12">
+             <div class="word-cloud">
+                 <div class="word">HTML</div>  
+                 <div class="word">CSS</div>  
+                 <div class="word">JavaScript</div>  
+                 <div class="word">C#</div>
+                 <div class="word">MySQL</div>  
+                 
+                  
+              
+             </div>
+           
+         </div>
+
+         <div class="row">
+            <div class="row col-12">
+              <div class="word-cloud">
+                  <div class="word">Photoshop</div>  
+                  <div class="word">Creación de contenido</div>  
+                  
+                   
+               
+              </div>
+            
+          </div>
+
+       
+ </div><!-- end row-->
+
+        
+           
+         </div>
+
+        
+ </div><!-- end row-->
                   
             </div>
         </div>
@@ -327,6 +383,7 @@
 
 
 
+
 <!-- FIN EDUCACION Y SKILLS-->
 
 
@@ -334,7 +391,7 @@
 
 <!--FOOTER-->
 <!-- footer section start -->
-<footer class="footer">
+<footer class="footer" id="contacto">
     <div class="container">
         <div class="row">
             <div class="col-md-4">
