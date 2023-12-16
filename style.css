@@ -451,9 +451,8 @@ font-size: medium;
 font-weight: bold;
 }
 
-.address{
-  justify-content: end;
-  align-items: end;
+.address1{
+  font-size: medium;
 }
 
 .photorow {
