@@ -437,7 +437,7 @@ font-family: "Roboto";
 .footer{
   background-color: black;
 color:#fff;
-height: 40px;
+height: auto;
 text-align: center;
 padding-top: 15px;
 padding-bottom: 5px;
@@ -446,6 +446,15 @@ margin-top: 15px;
 
 }
 
+#tituloFooter{
+font-size: medium;
+font-weight: bold;
+}
+
+.address{
+  justify-content: end;
+  align-items: end;
+}
 
 .photorow {
   display: flex;
