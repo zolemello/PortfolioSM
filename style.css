@@ -248,13 +248,14 @@ padding: 40px;
 .about {
 
   position: relative;
-  overflow: hidden;
   padding-top: 100px;
   padding-bottom: 50px;
-  margin-bottom: 20px;
+  margin-bottom: 100px;
   height: 100vh;
  
 }
+
+
 
 
 
