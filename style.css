@@ -319,6 +319,29 @@ vertical-align:-webkit-baseline-middle;
   padding: 30px;
 }
 
+.simil-boton {
+  border: 1px solid #7b6fec;
+  padding: 10px;
+  border-radius: 5px;
+  display: inline-block; 
+  cursor: pointer;
+  transition: background-color 0.3s ease; 
+  text-decoration: none;
+  
+}
+
+.simil-boton:hover {
+  background-color: #68a2c9; 
+  color: black;
+  text-decoration: none;
+}
+
+
+.encabezadoProy{
+
+  margin-bottom: 15px;
+}
+
 
 .filtros {
   margin-bottom: 20px; 
