@@ -268,8 +268,8 @@ padding: 40px;
   padding: 20px;
 
   border-radius: 20px;
-  height: 50%;
-  width: 50%;
+  height: 40%;
+  width: 40%;
 }
 
 .contactoTitulo{
@@ -620,5 +620,18 @@ font-weight: bold;
   padding: 10px;
   border-radius: 5px;
   font-size: 16px;
+  
+}
+
+.boton-descarga {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  white-space: normal;
+  display: flex;
+  flex-wrap: wrap;
+
   
 }
