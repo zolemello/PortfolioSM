@@ -733,3 +733,68 @@ font-weight: bold;
     margin-bottom: 20px;
   }
 }
+
+
+
+/* ===== AJUSTES ADICIONALES ===== */
+
+img, .about-image, .avatar-image {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Footer responsive */
+@media (max-width: 768px) {
+  .footer .col-md-4 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .footer .logo-footer {
+    width: 50%;
+    height: auto;
+  }
+}
+
+/* Botón subir en móvil */
+@media (max-width: 600px) {
+  .boton-subir {
+    padding: 10px;
+    right: 10px;
+    bottom: 10px;
+  }
+
+  .boton-subir a {
+    font-size: 20px;
+  }
+}
+
+/* Espaciados menores en móviles */
+@media (max-width: 768px) {
+  .divisor {
+    font-size: 25px;
+    padding: 20px;
+  }
+
+  .projects-title {
+    font-size: 20px;
+  }
+
+  .projects-thumb {
+    padding: 20px;
+  }
+
+  .estudioTitulo, .estudioInfo {
+    font-size: 14px;
+  }
+
+  #tituloMedio {
+    font-size: 20px;
+  }
+}
+
+/* Mejor contraste para íconos */
+.contact-icon i,
+.contactoIcons i {
+  color: #0d6efd !important; /* Bootstrap blue para accesibilidad */
+}
