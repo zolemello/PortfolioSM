@@ -635,3 +635,101 @@ font-weight: bold;
 
   
 }
+
+
+/* ===== ESTILOS RESPONSIVE AGREGADOS POR LUMI ===== */
+
+@media (max-width: 768px) {
+  .navegation a {
+    float: none;
+    display: block;
+    margin: 5px auto;
+    text-align: center;
+  }
+
+  .botonesNav {
+    float: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .infoPerfil {
+    margin: 30px 10px;
+    padding: 10px;
+  }
+
+  #bienvenida {
+    font-size: 40px;
+    text-align: center;
+  }
+
+  #nombre {
+    font-size: 30px;
+    text-align: center;
+    margin: 20px 0;
+  }
+
+  #tagline, #undertag {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .Perfil,
+  .about,
+  .contenedorEdu,
+  .contenedorSkills {
+    height: auto;
+    padding-top: 50px;
+    padding-bottom: 30px;
+  }
+
+  .about-image,
+  .avatar-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .about-section {
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+
+  .filtros {
+    flex-wrap: wrap;
+  }
+
+  .filtros button {
+    margin: 5px;
+    width: 45%;
+  }
+
+  .simil-boton {
+    display: block;
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .projects-title {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .projects-thumb {
+    padding: 20px;
+  }
+
+  .word-cloud {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer {
+    text-align: center;
+  }
+
+  .footer .col-md-4 {
+    margin-bottom: 20px;
+  }
+}
