@@ -49,26 +49,31 @@
   
 
     <div class="botonesNav">
-     
-         <a class="custom-btn btn custom-link botonMenu"  href="index.html">Home</a> 
+
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <i class="fa fa-bars"></i>
+          </div>
           
-        <a class="custom-btn btn custom-link botonMenu" href="index.html#about">About</a>
-                 
-        <a class="custom-btn btn custom-link botonMenu" href="#proyectos">Proyectos</a>
+          <div class="botonesNav" id="menu">
+            <a class="custom-btn btn custom-link botonMenu" href="index.html">Home</a> 
+            <a class="custom-btn btn custom-link botonMenu" href="#about">About</a>
+            <a class="custom-btn btn custom-link botonMenu" href="#proyectos">Proyectos</a>
+            <a class="custom-btn btn custom-link botonMenu" href="#estudios">Estudios</a>
+            <a class="custom-btn btn custom-link botonMenu" href="#habilidades">Conocimientos</a>
+          </div>
 
-        <a class="custom-btn btn custom-link botonMenu" href="#estudios">Estudios</a>
 
-        <a class="custom-btn btn custom-link botonMenu" href="#habilidades">Conocimientos</a>
+     
+        
 
-      <!--  <a class="custom-btn btn custom-link botonMenu" href="#contacto">Contacto</a> -->
-    
-       
-
-            
+          
     </div>
 
 
 </nav>
+
+
+
 
 
 
@@ -217,6 +222,22 @@
     <div class="display-trabajos">
         <div class="container">
             <div class="row">
+                <div class="col-lg-6" data-category="back">
+                    <div class="text-container" >
+                        <div class="image-container">
+                           <a href="https://proyecto-ionic-grupo10.vercel.app/login"  target="_blank" class="popup-image" >  <img class="img-fluid" src="images/work-6.jpg" class="projects-image img-fluid tohidaButton" alt=""> </a> 
+                              
+                            </a>
+                        </div> <!-- end of image-container -->
+                        <div class="encabezadoProy">
+                        <p><h3 class="projects-title">SuperHeroApp</h3>  </p>
+                        <a class="simil-boton" href="https://proyecto-ionic-grupo10.vercel.app/login"  target="_blank"> Ver en navegador</a>
+                        </div>
+                        <p><strong>Proyecto:</strong> Trabajo para la materia Desarrollo de Aplicaciones Móviles, 2do cuatrimestre 2024. La app estaba diseñada usando Ionic, con el objetivo de poder generar un apk. </p>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+
+
                 <div class="col-lg-6" data-category="front">
                     <div class="text-container" >
                         <div class="image-container">

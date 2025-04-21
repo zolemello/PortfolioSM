@@ -29,15 +29,19 @@ document.addEventListener("DOMContentLoaded", function(){
 
   
     function filterProjects(category) {
-        const projects = document.querySelectorAll('.col-lg-6'); // Selecciona todos los proyectos
-        projects.forEach(project => {
+        const projects = document.querySelectorAll('.col-lg-6'); 
             const projectCategory = project.getAttribute('data-category');
             if (category === 'todos' || projectCategory === category) {
-                project.style.display = 'block'; // Muestra el proyecto si coincide con la categoría o si se selecciona "Todos"
+                project.style.display = 'block'; 
             } else {
-                project.style.display = 'none'; // Oculta el proyecto si no coincide con la categoría
+                project.style.display = 'none'; 
             }
         });
+    }
+
+    function toggleMenu() {
+      const menu = document.getElementById('menu');
+      menu.classList.toggle('active');
     }
 
 
